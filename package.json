@@ -1,0 +1,15 @@
+{
+  "name": "tachyons-open-color",
+  "version": "1.0.0",
+  "main": "index.css",
+  "repository": "git@github.com:knoopx/tachyons-open-color.git",
+  "author": "Victor Martinez <knoopx@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^4.5.3",
+    "open-color": "^1.5.1"
+  },
+  "scripts": {
+    "build": "node-sass index.scss > index.css"
+  }
+}

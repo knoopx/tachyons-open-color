@@ -1,0 +1,21 @@
+@import "./node_modules/open-color/open-color.scss";
+
+@mixin define-selectors($name, $value) {
+  .#{$name} {
+    color: $value;
+  }
+
+  .bg-#{$name} {
+    background-color: $value;
+  }
+
+  .b--#{$name} {
+    border-color: $value;
+  }
+}
+
+@each $list, $name in $oc-color-list {
+  @each $index, $value in $list {
+    @include define-selectors("#{$name}-#{$index}", $value)
+  }
+}
